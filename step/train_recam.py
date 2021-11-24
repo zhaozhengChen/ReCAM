@@ -48,7 +48,7 @@ def run(args):
     print('train_recam')
     model = getattr(importlib.import_module(args.cam_network), 'Net_CAM_Feature')()
     param_groups = model.trainable_parameters()
-    model.load_state_dict(torch.load('sess/res50_cam.pth'), strict=True)
+    model.load_state_dict(torch.load(args.cam_weights_name), strict=True)
     model = torch.nn.DataParallel(model).cuda()
 
     recam_predictor = net.resnet50_cam.Class_Predictor(20, 2048)
