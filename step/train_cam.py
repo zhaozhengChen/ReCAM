@@ -34,7 +34,7 @@ def validate(model, data_loader):
 
     model.train()
 
-    print('loss: %.4f' % (val_loss_meter.pop('loss1')))
+    print('loss: %.4f' % (val_loss_meter.pop('loss')))
 
     return
 
