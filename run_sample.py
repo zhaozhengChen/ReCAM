@@ -136,7 +136,7 @@ if __name__ == '__main__':
     if args.make_recam_pass is True:
         import step.make_recam
 
-        timer = pyutils.Timer('step.make_cam:')
+        timer = pyutils.Timer('step.make_recam:')
         step.make_recam.run(args)
 
     if args.eval_cam_pass is True:
