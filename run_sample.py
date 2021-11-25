@@ -68,7 +68,7 @@ if __name__ == '__main__':
     parser.add_argument("--sem_seg_bg_thres", default=0.28)
 
     # Output Path
-    parser.add_argument("--work_space", default="result_default", type=str)
+    parser.add_argument("--work_space", default="result_default", type=str) # set your path
     parser.add_argument("--log_name", default="sample_train_eval", type=str)
     parser.add_argument("--cam_weights_name", default="res50_cam.pth", type=str)
     parser.add_argument("--irn_weights_name", default="res50_irn.pth", type=str)
@@ -167,5 +167,5 @@ if __name__ == '__main__':
         import step.eval_sem_seg
 
         timer = pyutils.Timer('step.eval_sem_seg:')
-        step.eval_sem_seg2.run(args)
+        step.eval_sem_seg.run(args)
 
