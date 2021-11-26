@@ -20,7 +20,9 @@ CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root ./VOCdevkit/VOC2012/ --
 CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root ./VOCdevkit/VOC2012/ --work_space YOUR_WORK_SPACE --cam_to_ir_label_pass True --train_irn_pass True --make_sem_seg_pass True --eval_sem_seg_pass True 
 ```
 ### Step 4. Train semantic segmentation network.
-To train DeepLab-v2, we refer to [deeplab-pytorch](https://github.com/kazuto1011/deeplab-pytorch). We use the ImageNet pre-trained model provided by [AdvCAM](https://github.com/jbeomlee93/AdvCAM).
+To train DeepLab-v2, we refer to [deeplab-pytorch](https://github.com/kazuto1011/deeplab-pytorch). 
+We use the [ImageNet pre-trained model](https://drive.google.com/file/d/14soMKDnIZ_crXQTlol9sNHVPozcQQpMn/view?usp=sharing) for DeepLabV2 provided by [AdvCAM](https://github.com/jbeomlee93/AdvCAM).
+Please replace the groundtruth masks with generated pseudo masks.
 
 ## Acknowledgment
 This code is borrowed from [IRN](https://github.com/jiwoon-ahn/irn) and [AdvCAM](https://github.com/jbeomlee93/AdvCAM), thanks Jiwoon and Jungbeom.
