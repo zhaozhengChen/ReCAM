@@ -10,7 +10,7 @@ conda env create -f environment.yml
 ## Usage
 ### Step 1. Prepare dataset.
 - Download PASCAL VOC 2012 devkit from official website(http://host.robots.ox.ac.uk/pascal/VOC/voc2012/#devkit). [Download](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar). 
-- You also need to specify the path ('voc12_root') of your downloaded devkit.
+- You need to specify the path ('voc12_root') of your downloaded devkit in the following steps.
 ### Step 2. Train ReCAM and generate seeds.
 ```
 CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root ./VOCdevkit/VOC2012/ --work_space YOUR_WORK_SPACE --train_cam_pass True --train_recam_pass True --make_recam_pass True --eval_cam_pass True 
