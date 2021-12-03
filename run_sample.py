@@ -27,7 +27,7 @@ if __name__ == '__main__':
     # Dataset
     parser.add_argument("--train_list", default="voc12/train_aug.txt", type=str)
     parser.add_argument("--val_list", default="voc12/val.txt", type=str)
-    parser.add_argument("--infer_list", default="voc12/train_aug.txt", type=str,
+    parser.add_argument("--infer_list", default="voc12/train.txt", type=str,
                         help="voc12/train_aug.txt to train a fully supervised model, "
                              "voc12/train.txt or voc12/val.txt to quickly check the quality of the labels.")
     parser.add_argument("--chainer_eval_set", default="train", type=str)
@@ -68,7 +68,7 @@ if __name__ == '__main__':
     parser.add_argument("--sem_seg_bg_thres", default=0.28)
 
     # Output Path
-    parser.add_argument("--work_space", default="result_default", type=str) # set your path
+    parser.add_argument("--work_space", default="result_default5", type=str) # set your path
     parser.add_argument("--log_name", default="sample_train_eval", type=str)
     parser.add_argument("--cam_weights_name", default="res50_cam.pth", type=str)
     parser.add_argument("--irn_weights_name", default="res50_irn.pth", type=str)
@@ -76,13 +76,10 @@ if __name__ == '__main__':
     parser.add_argument("--ir_label_out_dir", default="ir_label", type=str)
     parser.add_argument("--sem_seg_out_dir", default="sem_seg", type=str)
     parser.add_argument("--ins_seg_out_dir", default="ins_seg", type=str)
-    parser.add_argument("--confounder_out_dir", default="", type=str)
     parser.add_argument("--recam_weight_dir", default="recam_weight", type=str)
 
     # Step
     parser.add_argument("--train_cam_pass", type=str2bool, default=False)
-    parser.add_argument("--study_cam_pass", type=str2bool, default=False)
-    parser.add_argument("--train_cam_loss_pass", type=str2bool, default=False)
     parser.add_argument("--train_recam_pass", type=str2bool, default=False)
     parser.add_argument("--make_cam_pass", type=str2bool, default=False)
     parser.add_argument("--make_recam_pass", type=str2bool, default=False)
