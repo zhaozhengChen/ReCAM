@@ -44,8 +44,8 @@ if __name__ == '__main__':
     
 
     # Mining Inter-pixel Relations
-    parser.add_argument("--conf_fg_thres", default=0.30, type=float)
-    parser.add_argument("--conf_bg_thres", default=0.05, type=float)
+    parser.add_argument("--conf_fg_thres", default=0.35, type=float)
+    parser.add_argument("--conf_bg_thres", default=0.1, type=float)
 
     # Inter-pixel Relation Network (IRNet)
     parser.add_argument("--irn_network", default="net.resnet50_irn", type=str)
