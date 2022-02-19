@@ -1,5 +1,5 @@
 # ReCAM
-The code of ReCAM for Anonymous CVPR 2022 submission 5021 (Class Re-Activation Maps for Weakly-Supervised Semantic Segmentation).
+The code of CVPR 2022 submission 5021 (Class Re-Activation Maps for Weakly-Supervised Semantic Segmentation).
 
 ## Prerequisite
 - Python 3.6, PyTorch 1.9, and others in environment.yml
