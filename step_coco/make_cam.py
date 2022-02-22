@@ -60,7 +60,7 @@ def _work(process_id, model, dataset, args):
 
 
 def run(args):
-    model = getattr(importlib.import_module(args.cam_network), 'CAM')()
+    model = getattr(importlib.import_module(args.cam_network), 'CAM')(n_classes=80)
     model.load_state_dict(torch.load(args.cam_weights_name), strict=True)
     model.eval()
 
