@@ -33,11 +33,11 @@ Please replace the groundtruth masks with generated pseudo masks.
 ### Step 2. Train ReCAM and generate seeds.
 - Please specify a workspace to save the model and logs.
 ```
-CUDA_VISIBLE_DEVICES=0 python run_sample.py --mscoco_root ../MSCOCO/ --work_space YOUR_WORK_SPACE --train_cam_pass True --train_recam_pass True --make_recam_pass True --eval_cam_pass True 
+CUDA_VISIBLE_DEVICES=0 python run_sample_coco.py --mscoco_root ../MSCOCO/ --work_space YOUR_WORK_SPACE --train_cam_pass True --train_recam_pass True --make_recam_pass True --eval_cam_pass True 
 ```
 ### Step 3. Train IRN and generate pseudo masks.
 ```
-CUDA_VISIBLE_DEVICES=0 python run_sample.py --mscoco_root ../MSCOCO/ --work_space YOUR_WORK_SPACE --cam_to_ir_label_pass True --train_irn_pass True --make_sem_seg_pass True --eval_sem_seg_pass True 
+CUDA_VISIBLE_DEVICES=0 python run_sample_coco.py --mscoco_root ../MSCOCO/ --work_space YOUR_WORK_SPACE --cam_to_ir_label_pass True --train_irn_pass True --make_sem_seg_pass True --eval_sem_seg_pass True 
 ```
 ### Step 4. Train semantic segmentation network.
 - The same as PASCAL VOC.
