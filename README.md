@@ -1,5 +1,5 @@
 # ReCAM
-The official code of CVPR 2022 paper (Class Re-Activation Maps for Weakly-Supervised Semantic Segmentation). [Download](https://arxiv.org/abs/2203.00962)
+The official code of CVPR 2022 paper (Class Re-Activation Maps for Weakly-Supervised Semantic Segmentation). [arXiv](https://arxiv.org/abs/2203.00962)
 
 ## Prerequisite
 - Python 3.6, PyTorch 1.9, and others in environment.yml
