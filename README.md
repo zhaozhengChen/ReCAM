@@ -29,7 +29,7 @@ Please replace the groundtruth masks with generated pseudo masks.
 ### Step 1. Prepare dataset.
 - Download MS COCO images from the [official COCO website](https://cocodataset.org/#download).
 - Generate mask from annotations (annToMask.py file in ./mscoco/).
-- Download MS COCO image-level labels frm [here](https://drive.google.com/drive/folders/1XCu51bAUK3nOvO-VVKD7kE9bIFpAECBR?usp=sharing) and put them in ./mscoco/
+- Download MS COCO image-level labels from [here](https://drive.google.com/drive/folders/1XCu51bAUK3nOvO-VVKD7kE9bIFpAECBR?usp=sharing) and put them in ./mscoco/
 ### Step 2. Train ReCAM and generate seeds.
 - Please specify a workspace to save the model and logs.
 ```
